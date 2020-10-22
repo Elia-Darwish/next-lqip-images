@@ -178,5 +178,5 @@ in your `next-env.d.ts` file at the root of your project, add the following line
 + /// <reference types="next-lqip-images" />
 ```
 
-[npm]: https://img.shields.io/npm/v/lqip-modern-loader.svg
-[npm-url]: https://npmjs.com/package/lqip-modern-loader
+[npm]: https://img.shields.io/npm/v/next-lqip-images.svg
+[npm-url]: https://www.npmjs.com/package/next-lqip-images
