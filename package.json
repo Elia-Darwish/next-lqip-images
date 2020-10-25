@@ -1,6 +1,6 @@
 {
   "name": "next-lqip-images",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Next.js plugin that helps you import images into your project and provide a low quality image to use as a placeholder.",
   "main": "lib",
   "directories": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Elia-Darwish/next-lqip-images#readme",
   "devDependencies": {
-    "eslint": "^7.11.0",
+    "eslint": "^7.12.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-import": "^2.22.1",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "file-loader": "^6.1.1",
-    "lqip-modern-loader": "0.0.4",
+    "lqip-modern-loader": "0.0.6",
     "url-loader": "^4.1.1"
   }
 }
