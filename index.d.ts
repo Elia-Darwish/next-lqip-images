@@ -1,4 +1,5 @@
 interface LqipImage {
+  src: string
   width: number
   height: number
   dataURI: string
@@ -46,6 +47,7 @@ declare module "*.jp2" {
 
 
 declare module '*.jpg?lqip' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string
@@ -54,6 +56,7 @@ declare module '*.jpg?lqip' {
 }
 
 declare module '*.jpeg?lqip' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string
@@ -62,6 +65,7 @@ declare module '*.jpeg?lqip' {
 }
 
 declare module '*.png?lqip' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string
@@ -70,6 +74,7 @@ declare module '*.png?lqip' {
 }
 
 declare module '*.jpg?lqip&webp' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string
@@ -78,6 +83,7 @@ declare module '*.jpg?lqip&webp' {
 }
 
 declare module '*.jpeg?lqip&webp' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string
@@ -86,6 +92,7 @@ declare module '*.jpeg?lqip&webp' {
 }
 
 declare module '*.png?lqip&webp' {
+  export const src: string
   export const width: number
   export const height: number
   export const dataURI: string

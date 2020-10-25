@@ -1,6 +1,6 @@
 {
   "name": "next-lqip-images",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Next.js plugin that helps you import images into your project and provide a low quality image to use as a placeholder.",
   "main": "lib",
   "directories": {
