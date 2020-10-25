@@ -30,24 +30,11 @@ height of the placeholder image.
 example:
 
 ```js
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(gif|png|jpe?g)$/i,
-        use: [
-          {
-            loader: 'lqip-modern-loader',
-            options: {
-              placeholderSize: [32, 32],
-            },
-          },
-          'url-loader',
-        ],
-      },
-    ],
-  },
-}
+const withLqipImages = require('next-lqip-images')
+
+module.exports = withLqipImages({
+  placeholderSize: [32, 32],
+})
 // an example output would be
 {
   src: '...', //image source
@@ -55,4 +42,29 @@ module.exports = {
   height: 32, // placeholder height
   dataURI: '...', // placeholder image URI
 }
+```
+
+# 0.1.0
+
+### added a param to get a blurred image output
+
+```js
+import img from './image.jpg?lqip&blur&webp'
+```
+
+### added an option to set the blur amount
+
+```js
+const withLqipImages = require('next-lqip-images')
+
+module.exports = withLqipImages({
+  placeholderSize: 32,
+  placeholderBlur: 3.2,
+})
+```
+
+### added a param to get an array of dominant image colors
+
+```js
+import { src, width, height, colors } from './image.png?colors'
 ```
